@@ -2,19 +2,57 @@
 
 ## Features
 
-- **Admin Portal**
-    - **Configure Json**
-        - There will be an option to input JOSN file/JSON data that define form fields, including label, placeholder, input type, button, required status, validation rules etc.
-        - Admin should be able to save these configurations in the database.
-    - **Dynamic Form Builder**
-        - Build a dynamic form builder interface where admins can drag and drop input fields to create or modify forms or change form element's serial. These input fields will come from the DB, stored in previous step.
-        - Ensure that changes made through the UI are persistent
-    - **Form Management**
-        - List all created forms in a dashboard with options to view(Form Display), edit.
-        - Provide functionality to edit existing forms by modifying the fields and updating the form layout.
-    - **Form Display**
-        - Fetch the form configuration from the server and render the form dynamically on the client side using Vue.js and Inertia.js.
-        - Validate the user input based on the rules defined in the JSON configuration no need to post in server.
+### Admin Portal: Configure JSON
+- **Upload or Input JSON Data**: Define form fields with customizable properties.
+- **JSON Fields Include**:
+  - **Label**: Field label text.
+  - **Placeholder**: Placeholder text.
+  - **Input Type**: Text, dropdown, checkbox, etc.
+  - **Required Status**: Mandatory or optional.
+  - **Validation Rules**: Validation for input values.
+  - **Button Configuration**: Submit/reset buttons.
+- **Database Integration**: Save form configurations in the database.
+
+### Dynamic Form Builder
+- **Drag and Drop Interface**:
+  - Drag fields to create or modify forms.
+  - Rearrange form fields to change their order.
+- **Persistence**:
+  - All changes are saved to the database in real time.
+  - Input fields loaded from stored JSON configurations.
+
+### Form Management
+- **Dashboard View**:
+  - List all created forms.
+  - View forms (render as configured).
+  - Edit or delete existing forms.
+- **Edit Functionality**:
+  - Modify field properties or layout.
+  - Update and save forms seamlessly.
+
+### Form Display
+- **Dynamic Form Rendering**:
+  - Fetch form configuration from the server.
+  - Render forms dynamically using Vue.js and Inertia.js.
+- **Client-Side Validation**:
+  - Validate user input based on JSON-defined rules.
+  - No server submission required.
+
+### Usage
+- Access the **Admin Portal** to upload JSON or use the dynamic form builder.
+- Manage forms through the dashboard (view, edit, delete).
+- Render forms dynamically on the client side via Vue.js and Inertia.js.
+
+## Tech Stack
+- **Backend**: Laravel (with database for storing configurations).
+- **Frontend**: Vue.js and Inertia.js for dynamic rendering and user interaction.
+- **Database**: Stores JSON configurations and form metadata.
+
+### Prerequisites
+- PHP >= 8.3
+- Laravel >= 12
+- Node.js >= 18
+- MySQL or any compatible database
 
 
 ## Instructions
