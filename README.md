@@ -28,6 +28,11 @@
 9. Run `php artisan serve`
 10. Run `NPM Install`   
 11. Run `NPM Run Dev`
+12. Visit `http://localhost:8000` in your browser
+13. Admin Login
+    - Visit `http://localhost:8000/login`
+    - Email: `test@example.com`
+    - Password: `12345678`
 
 
 
