@@ -66,13 +66,13 @@ class FormController extends Controller
 
     public function show($id)
     {
-        $form = $this->formService->getFormById($id);
+        $forms = $this->formService->getFormById($id);
 
         return Inertia::render('Forms/Show', [
             'form' => [
-                'id' => $form->id,
-                'title' => $form->title,
-                'fields' => $form->fields,
+                'id' => $forms ? $forms->id : null,
+                'title' => $forms ? $forms->title : null,
+                'fields' => $forms ? $forms->fields : null,
             ],
         ]);
     }
@@ -89,9 +89,9 @@ class FormController extends Controller
         $forms = $this->formService->getUserForms();
         return Inertia::render('Website', [
             'form' => [
-                'id' => $forms->id,
-                'title' => $forms->title,
-                'fields' => $forms->fields,
+                'id' => $forms ? $forms->id : null,
+                'title' => $forms ? $forms->title : null,
+                'fields' => $forms ? $forms->fields : null,
             ],
         ]);
     }
