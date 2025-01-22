@@ -64,8 +64,8 @@
 6. Create a database and update the `.env` file
 8. Run `php artisan migrate:fresh --seed`
 9. Run `php artisan serve`
-10. Run `NPM Install`   
-11. Run `NPM Run Dev`
+10. Run `npm install`   
+11. Run `npm run dev`
 12. Visit `http://localhost:8000` in your browser
 13. Admin Login
     - Visit `http://localhost:8000/login`
