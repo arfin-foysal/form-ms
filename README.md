@@ -49,8 +49,8 @@
 - **Database**: Stores JSON configurations and form metadata.
 
 ### Prerequisites
-- PHP >= 8.3
-- Laravel >= 12
+- PHP >= 8.1
+- Laravel >= 11
 - Node.js >= 18
 - MySQL or any compatible database
 
